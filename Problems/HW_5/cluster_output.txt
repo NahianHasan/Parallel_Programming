@@ -1,0 +1,11 @@
+Code Compilation Successful
+Tree are separately randomized for sequential and parallel construction. Hence, the number of interest nodes will be different.
+
+Count_sequential = 131071
+Count_parallel = 130696
+Time for building and traversing Tree (Sequential Run) = 0.013626 s
+Time for building and traversing Tree (Parallel Run) = 0.211631 s
+
+Comment:
+Traversal slowdowns in the tree might be related to malloc and cache behavior. Malloc requires it to acquire a lock while allocating storage, which has an overhead. Meanwhile, another thread executing malloc will go into a wait queue, and be removed from the queue and executed when the lock is available.  This has some overhead. That's why sometimes the parallel code is slower than the sequential one. I also ran the same code in a multi-thread (16) single processor machine (Intel Core-i-7 12th gen processor). The parallel code runs a little faster than the parallel code in a cluster run. However, still the required time is higher than that of sequential run.
+Job Completed
