@@ -1,0 +1,21 @@
+
+Lmod is automatically replacing "gcc/9.3.0" with "intel/19.0.5.281".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) openmpi/3.1.4     2) zlib/1.2.11
+
+
+Lmod is automatically replacing "intel/19.0.5.281" with "gcc/9.3.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) openmpi/3.1.4     2) zlib/1.2.11
+
+/var/spool/slurm/job20091012/slurm_script: line 18: icc: command not found
+Serial Summation (Master Thread):	Runhost:bell-a004.rcac.purdue.edu	Thread:0/1	Summation=499999500000.000000	 Time=0.000478 seconds
+Parallel Summation:	Runhost:bell-a004.rcac.purdue.edu	Threads:1	Summation=499999500000.000000	 Time=0.085660 seconds
+Parallel Summation (Openmp Reduction):	Runhost:bell-a004.rcac.purdue.edu	Threads:1	Summation=499999500000.000000	 Time=0.004116 seconds
+
+
+Job Completed

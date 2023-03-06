@@ -1,0 +1,27 @@
+
+Lmod is automatically replacing "gcc/9.3.0" with "intel/19.0.5.281".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) openmpi/3.1.4     2) zlib/1.2.11
+
+Code Compilation Successful
+Parallel Region (Static Scheduling):	Runhost:bell-a473.rcac.purdue.edu Time:0.057566
+
+
+Parallel Region (Static(50) Scheduling):	Runhost:bell-a473.rcac.purdue.edu Time:0.021081
+
+
+Parallel Region (Dynamic Scheduling):	Runhost:bell-a473.rcac.purdue.edu Time:0.007507
+
+
+Parallel Region (Dynamic(50) Scheduling):	Runhost:bell-a473.rcac.purdue.edu Time:0.021025
+
+
+Parallel Region (Guided Scheduling):	Runhost:bell-a473.rcac.purdue.edu Time:0.001101
+
+
+Job Completed
+
+Conclusion:
+When the number of threads is quadrupled, the dynamic (default) scheduling became slower like the other strategies. The only exception was the guided schedul;ing which became faster than the previous case. Also, the static (default) scheduling got a little bit faster, but didn't win the race against guided scheduling.

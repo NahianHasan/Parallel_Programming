@@ -1,0 +1,128 @@
+
+Lmod is automatically replacing "gcc/9.3.0" with "intel/19.0.5.281".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) openmpi/3.1.4     2) zlib/1.2.11
+
+Code Compilation Successful
+w[800] = 0, Thread_ID=16
+w[0] = 0, Thread_ID=0
+w[100] = 1, Thread_ID=2
+w[550] = 0, Thread_ID=11
+w[50] = 0, Thread_ID=1
+w[300] = 0, Thread_ID=6
+w[500] = 5, Thread_ID=10
+w[250] = 2, Thread_ID=5
+w[450] = 0, Thread_ID=9
+w[850] = 8, Thread_ID=17
+w[400] = 0, Thread_ID=8
+w[200] = 0, Thread_ID=4
+w[750] = 7, Thread_ID=15
+w[650] = 0, Thread_ID=13
+w[700] = 0, Thread_ID=14
+w[150] = 0, Thread_ID=3
+w[350] = 0, Thread_ID=7
+w[600] = 0, Thread_ID=12
+w[950] = 9, Thread_ID=19
+w[900] = 0, Thread_ID=18
+Parallel Region (Static Scheduling):	Runhost:bell-a046.rcac.purdue.edu Time:0.108722
+
+
+w[0] = 0, Thread_ID=0
+w[50] = 0, Thread_ID=0
+w[100] = 1, Thread_ID=0
+w[150] = 0, Thread_ID=0
+w[200] = 0, Thread_ID=0
+w[250] = 2, Thread_ID=0
+w[300] = 0, Thread_ID=0
+w[350] = 0, Thread_ID=0
+w[400] = 0, Thread_ID=0
+w[450] = 0, Thread_ID=0
+w[500] = 5, Thread_ID=0
+w[550] = 0, Thread_ID=0
+w[600] = 0, Thread_ID=0
+w[650] = 0, Thread_ID=0
+w[700] = 0, Thread_ID=0
+w[750] = 7, Thread_ID=0
+w[800] = 0, Thread_ID=0
+w[850] = 8, Thread_ID=0
+w[900] = 0, Thread_ID=0
+w[950] = 9, Thread_ID=0
+Parallel Region (Static(50) Scheduling):	Runhost:bell-a046.rcac.purdue.edu Time:0.021106
+
+
+w[0] = 0, Thread_ID=0
+w[150] = 0, Thread_ID=13
+w[500] = 5, Thread_ID=1
+w[200] = 0, Thread_ID=14
+w[300] = 0, Thread_ID=5
+w[650] = 0, Thread_ID=8
+w[350] = 0, Thread_ID=16
+w[450] = 0, Thread_ID=6
+w[800] = 0, Thread_ID=10
+w[600] = 0, Thread_ID=17
+w[750] = 7, Thread_ID=15
+w[550] = 0, Thread_ID=18
+w[400] = 0, Thread_ID=19
+w[850] = 8, Thread_ID=2
+w[50] = 0, Thread_ID=4
+w[700] = 0, Thread_ID=11
+w[900] = 0, Thread_ID=9
+w[100] = 1, Thread_ID=12
+w[950] = 9, Thread_ID=3
+w[250] = 2, Thread_ID=7
+Parallel Region (Dynamic Scheduling):	Runhost:bell-a046.rcac.purdue.edu Time:0.002530
+
+
+w[0] = 0, Thread_ID=0
+w[50] = 0, Thread_ID=0
+w[100] = 1, Thread_ID=0
+w[150] = 0, Thread_ID=0
+w[200] = 0, Thread_ID=0
+w[250] = 2, Thread_ID=0
+w[300] = 0, Thread_ID=0
+w[350] = 0, Thread_ID=0
+w[400] = 0, Thread_ID=0
+w[450] = 0, Thread_ID=0
+w[500] = 5, Thread_ID=0
+w[550] = 0, Thread_ID=0
+w[600] = 0, Thread_ID=0
+w[650] = 0, Thread_ID=0
+w[700] = 0, Thread_ID=0
+w[750] = 7, Thread_ID=0
+w[800] = 0, Thread_ID=0
+w[850] = 8, Thread_ID=0
+w[900] = 0, Thread_ID=0
+w[950] = 9, Thread_ID=0
+Parallel Region (Dynamic(50) Scheduling):	Runhost:bell-a046.rcac.purdue.edu Time:0.021053
+
+
+w[0] = 0, Thread_ID=0
+w[300] = 0, Thread_ID=3
+w[200] = 0, Thread_ID=18
+w[100] = 1, Thread_ID=12
+w[150] = 0, Thread_ID=15
+w[250] = 2, Thread_ID=8
+w[350] = 0, Thread_ID=9
+w[400] = 0, Thread_ID=2
+w[450] = 0, Thread_ID=1
+w[500] = 5, Thread_ID=10
+w[950] = 9, Thread_ID=7
+w[550] = 0, Thread_ID=19
+w[600] = 0, Thread_ID=11
+w[50] = 0, Thread_ID=16
+w[650] = 0, Thread_ID=13
+w[700] = 0, Thread_ID=4
+w[750] = 7, Thread_ID=14
+w[800] = 0, Thread_ID=17
+w[850] = 8, Thread_ID=5
+w[900] = 0, Thread_ID=6
+Parallel Region (Guided Scheduling):	Runhost:bell-a046.rcac.purdue.edu Time:0.003940
+
+
+Job Completed
+
+
+Conclusion:
+The dynamic(default) schedling and guided scheduling worked better than all other strategies. However, the chunk size plays an important role also.

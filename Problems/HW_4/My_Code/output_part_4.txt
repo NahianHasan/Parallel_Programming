@@ -1,0 +1,18 @@
+
+Lmod is automatically replacing "gcc/9.3.0" with "intel/19.0.5.281".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) openmpi/3.1.4     2) zlib/1.2.11
+
+Code Compilation Successful
+
+
+Sequential Region:	Runhost:bell-a005.rcac.purdue.edu     Time:0.105383
+
+
+Parallel Region:	Runhost:bell-a005.rcac.purdue.edu     Time:0.016515
+Job Completed
+
+Conclusion:
+The parallel execution is faster than the sequential execution as the time shows.

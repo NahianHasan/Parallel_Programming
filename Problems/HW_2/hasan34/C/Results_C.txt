@@ -1,0 +1,25 @@
+
+Lmod is automatically replacing "gcc/9.3.0" with "intel/19.0.5.281".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) openmpi/3.1.4     2) zlib/1.2.11
+
+
+Lmod is automatically replacing "intel/19.0.5.281" with "gcc/9.3.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) openmpi/3.1.4     2) zlib/1.2.11
+
+/var/spool/slurm/job20091045/slurm_script: line 20: icc: command not found
+Serial Summation (Master Thread):	Runhost:bell-a004.rcac.purdue.edu	Thread:0/1	Summation=16.721794	 Time=0.007675 seconds
+Serial Summation (Master Thread):	Runhost:bell-a004.rcac.purdue.edu	Thread:0/1	Summation=16.695168	 Time=0.007677 seconds
+Parallel Summation (Openmp Reduction):	Runhost:bell-a004.rcac.purdue.edu	Threads:1	Summation=16.695314	 Time=0.039630 seconds
+
+
+Job Completed
+
+
+Reason of timing differences:
+The first method adds large numbers to the summation and decreasingly smaller numbers in subsequent iterations. As a result, as the sum gets bigger and bigger, more bits are needed to store the sum and less bits are available for the newer smaller numbers to be added. As the numbers get smaller, least significant bits of the floating point numbers are lost before addition. In the second method, small numbers are added first and incresingly larger number are added in subsequent iterations. Hence, the least significant bits of the smaller numbers aare preserved. That's why results are quite different. Therefore, the second result (backward sum) is the better one between the 1st and 2nd method. Since the third method is resembling the first one except in parallel, still, the second method is the most accurate one. The thirsd method is performing better because the arrays are didivided into smaller parts in different threads, hence the relative difference among numbers in the individual thread is much different than that of method 1.

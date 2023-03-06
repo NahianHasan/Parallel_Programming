@@ -1,0 +1,70 @@
+hw4a.c
+Code Compilation Successful
+before parfor tid: -1, tid address: 0x7ffd78cd4a04
+before parfor i: 2026720000, i address: 0x7ffd78cd4a00
+tid: 2, tid address: 0x7f4bc6e77e14
+tid: 13, tid address: 0x7f4bc166ce14
+tid: 7, tid address: 0x7f4bc4672e14
+tid: 3, tid address: 0x7f4bc6676e14
+tid: 11, tid address: 0x7f4bc266ee14
+tid: 15, tid address: 0x7f4bc066ae14
+tid: 8, tid address: 0x7f4bc3e71e14
+tid: 14, tid address: 0x7f4bc0e6be14
+tid: 4, tid address: 0x7f4bc5e75e14
+tid: 5, tid address: 0x7f4bc5674e14
+tid: 9, tid address: 0x7f4bc3670e14
+tid: 12, tid address: 0x7f4bc1e6de14
+tid: 10, tid address: 0x7f4bc2e6fe14
+tid: 1, tid address: 0x7f4bc7678e14
+tid: 6, tid address: 0x7f4bc4e73e14
+tid: 0, tid address: 0x7ffd78cd4994
+after parfor tid: -1, tid address: 0x7ffd78cd4a04
+
+hw4b
+Code Compilation Successful
+tid: 7, tid address: 0x7f6f90607e10
+tid: 15, tid address: 0x7f6f8c5ffe10
+tid: 1, tid address: 0x7f6f9360de10
+tid: 6, tid address: 0x7f6f90e08e10
+tid: 11, tid address: 0x7f6f8e603e10
+tid: 12, tid address: 0x7f6f8de02e10
+tid: 4, tid address: 0x7f6f91e0ae10
+tid: 9, tid address: 0x7f6f8f605e10
+tid: 14, tid address: 0x7f6f8ce00e10
+tid: 10, tid address: 0x7f6f8ee04e10
+tid: 3, tid address: 0x7f6f9260be10
+tid: 0, tid address: 0x7ffcb6e73100
+tid: 8, tid address: 0x7f6f8fe06e10
+tid: 2, tid address: 0x7f6f92e0ce10
+tid: 5, tid address: 0x7f6f91609e10
+tid: 13, tid address: 0x7f6f8d601e10
+
+hw4c
+Code Compilation Successful
+before parfor tid: 100, tid address: 0x7ffe003dd64c
+tid: 8, tid address: 0x7ffe003dd64c
+tid: 15, tid address: 0x7ffe003dd64c
+tid: 15, tid address: 0x7ffe003dd64c
+tid: 15, tid address: 0x7ffe003dd64c
+tid: 15, tid address: 0x7ffe003dd64c
+tid: 15, tid address: 0x7ffe003dd64c
+tid: 15, tid address: 0x7ffe003dd64c
+tid: 15, tid address: 0x7ffe003dd64c
+tid: 15, tid address: 0x7ffe003dd64c
+tid: 15, tid address: 0x7ffe003dd64c
+tid: 15, tid address: 0x7ffe003dd64c
+tid: 15, tid address: 0x7ffe003dd64c
+tid: 15, tid address: 0x7ffe003dd64c
+tid: 15, tid address: 0x7ffe003dd64c
+tid: 15, tid address: 0x7ffe003dd64c
+tid: 15, tid address: 0x7ffe003dd64c
+after parfor tid: 15, tid address: 0x7ffe003dd64c
+
+
+Discussion:
+In hw4a.c, 'tid' is a thread private variable. Each version of 'tid' inside each thread will have its own thread number and memory address.
+In hw4b.c, 'tid' is declared inside each thread, so it's thread private. Similar to the previous case, the variable has it's own thread number and address.
+In hw4c.c, 'tid' is a shared variable among threads. hence, it's address remains same among all threads. Until the #pragma omp critical, all the threads execute the previous command and after this directive,
+		the threads perform the operation one by one. However, since, tid is shared, not all theads can retain their thread id number intact inside the 'tid' variable. For example, here in the output,
+		thread 8 first executed the print command. By the time all other threads are ready to print their IDs, thread 15 is the last thread to be executed. Hence, it stored it's ID inside 'tid'. Therefore, when all other threads
+		started to print their ID, they only printed the ID of thread 15, it was overwritten.

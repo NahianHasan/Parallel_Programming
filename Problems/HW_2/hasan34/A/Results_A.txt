@@ -1,0 +1,38 @@
+
+Lmod is automatically replacing "gcc/9.3.0" with "intel/19.0.5.281".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) openmpi/3.1.4     2) zlib/1.2.11
+
+
+Lmod is automatically replacing "intel/19.0.5.281" with "gcc/9.3.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) openmpi/3.1.4     2) zlib/1.2.11
+
+Code Compilation Successful
+Serial Region (Master Thread):	Runhost:bell-a003.rcac.purdue.edu	Thread:0/1 
+Parallel Region:	Runhost:bell-a003.rcac.purdue.edu	Thread:14/20	Time:0.000001
+Parallel Region:	Runhost:bell-a003.rcac.purdue.edu	Thread:3/20	Time:0.000001
+Parallel Region:	Runhost:bell-a003.rcac.purdue.edu	Thread:4/20	Time:0.000001
+Parallel Region:	Runhost:bell-a003.rcac.purdue.edu	Thread:6/20	Time:0.000001
+finishing workParallel Region:	Runhost:bell-a003.rcac.purdue.edu	Thread:17/20	Time:0.000003
+Parallel Region:	Runhost:bell-a003.rcac.purdue.edu	Thread:11/20	Time:0.000003
+Parallel Region:	Runhost:bell-a003.rcac.purdue.edu	Thread:15/20	Time:0.000003
+Parallel Region:	Runhost:bell-a003.rcac.purdue.edu	Thread:1/20	Time:0.000001
+Parallel Region:	Runhost:bell-a003.rcac.purdue.edu	Thread:2/20	Time:0.000001
+Parallel Region:	Runhost:bell-a003.rcac.purdue.edu	Thread:7/20	Time:0.000001
+Parallel Region:	Runhost:bell-a003.rcac.purdue.edu	Thread:0/20	Time:0.000001
+Parallel Region:	Runhost:bell-a003.rcac.purdue.edu	Thread:16/20	Time:0.000002
+Parallel Region:	Runhost:bell-a003.rcac.purdue.edu	Thread:8/20	Time:0.000001
+Parallel Region:	Runhost:bell-a003.rcac.purdue.edu	Thread:12/20	Time:0.000001
+Parallel Region:	Runhost:bell-a003.rcac.purdue.edu	Thread:9/20	Time:0.000001
+Parallel Region:	Runhost:bell-a003.rcac.purdue.edu	Thread:18/20	Time:0.000001
+Parallel Region:	Runhost:bell-a003.rcac.purdue.edu	Thread:19/20	Time:0.000003
+Parallel Region:	Runhost:bell-a003.rcac.purdue.edu	Thread:5/20	Time:0.000000
+Parallel Region:	Runhost:bell-a003.rcac.purdue.edu	Thread:13/20	Time:0.000004
+Parallel Region:	Runhost:bell-a003.rcac.purdue.edu	Thread:10/20	Time:0.000004
+Master Thread took = 0.020998 seconds
+Job Completed

@@ -1,0 +1,24 @@
+
+Lmod is automatically replacing "gcc/9.3.0" with "intel/19.0.5.281".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) openmpi/3.1.4     2) zlib/1.2.11
+
+
+Lmod is automatically replacing "intel/19.0.5.281" with "gcc/9.3.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) openmpi/3.1.4     2) zlib/1.2.11
+
+slow.c
+Elapsed: 55.240000 seconds
+verySlow.c
+Elapsed: 77.030000 seconds
+
+
+Job Completed
+
+Reason for difference:
+The slow program uses tiling, hence, the data read operation handles a whole cache line. As much work as possible is done on the data in the tile before moving onto another tile. The verySlow.c program doesn't use such tiling. Hence delay in cache line read (too much data, greater than the standadrd cache line). However, I tried the program in a standard Desktop PC with a cache size of 16MB. There was not much significant difference. Hence, cache size matters in tiling.
